@@ -156,12 +156,49 @@
       box-shadow: 0 -2px 28px #23252688;
     }
     @media (max-width: 480px) {
-      h1 { font-size: 2rem; }
-      .bio { font-size: 0.95rem; padding: 12px 7px; }
-      .profile-img { width: 88px; height: 88px; }
-      .logo-img { width: 92px; }
-      .article-gallery { grid-template-columns: 1fr; }
-      .article-card img { height: 130px; }
+  .hero {
+    padding: 36px 8px 25px 8px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .tagline {
+    font-size: 1.0rem;
+  }
+  .bio {
+    font-size: 0.91rem;
+    padding: 10px 6px;
+    margin: 10px auto 18px auto;
+  }
+  .profile-img {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 15px;
+  }
+  .social-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .social-row a {
+    padding: 12px 0;
+    font-size: 1rem;
+    border-radius: 18px;
+    width: 96%;         /* Buttons almost full width, centered */
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+  .article-gallery {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin: 24px 5px 18px 5px;
+  }
+  .article-card img {
+    height: 110px;
+  }
+  .article-card .desc {
+    padding: 10px 8px 10px 8px;
+  }
     }
   </style>
 </head>
