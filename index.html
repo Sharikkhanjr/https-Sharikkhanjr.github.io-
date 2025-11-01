@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sharik Khan Jr | VIP Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #232526, #667eea 60%, #764ba2 100%);
+      min-height: 100vh;
+      color: #fff;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px 40px 20px;
+      text-align: center;
+      background: transparent;
+    }
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #58c8fe;
+      box-shadow: 0 8px 35px rgba(66, 155, 240, 0.30);
+      background: #fff;
+      object-fit: cover;
+      margin-bottom: 22px;
+    }
+    .logo-img {
+      width: 120px;
+      height: auto;
+      margin: 10px auto 32px auto;
+      display: block;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin: 0 0 14px 0;
+      letter-spacing: 1px;
+      color: #fff;
+      text-shadow: 0 3px 32px #667eea80;
+    }
+    .tagline {
+      font-size: 1.3rem;
+      color: #63ffee;
+      margin-bottom: 12px;
+      font-weight: 600;
+      animation: gradientPop 3s infinite alternate;
+    }
+    @keyframes gradientPop { to { color: #ffc480; } }
+    .bio {
+      max-width: 480px;
+      margin: 18px auto 30px auto;
+      font-size: 1.10rem;
+      color: #eee;
+      background: rgba(46,46,46,0.55);
+      border-radius: 12px;
+      padding: 18px 17px;
+      line-height: 1.6;
+      box-shadow: 0 4px 24px #3338;
+    }
+    .social-row {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin: 30px 0 14px 0;
+      flex-wrap: wrap;
+    }
+    .social-row a {
+      background: linear-gradient(135deg,#667eea 64%,#764ba2 100%);
+      color: #fff;
+      padding: 15px 22px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      box-shadow: 0 2px 12px #564ad677, 0 0px 0 #1e1e1e;
+      text-decoration: none;
+      transition: transform 0.17s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .social-row a:hover {
+      transform: scale(1.06) translateY(-2px);
+      background: linear-gradient(135deg,#58c8fe 30%,#232526 100%);
+    }
+    .article-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+      gap: 28px;
+      margin: 48px 14px 40px 14px;
+      align-items: stretch;
+    }
+    .article-card {
+      background: rgba(22,25,44,0.86);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #31166588;
+      overflow: hidden;
+      transition: box-shadow .21s;
+      display: flex;
+      flex-direction: column;
+    }
+    .article-card:hover { box-shadow: 0 8px 36px #667eea99; }
+    .article-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: #222;
+    }
+    .article-card .desc {
+      padding: 22px 16px 18px 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .article-card h3 {
+      font-size: 1.14rem;
+      margin: 0 0 10px 0;
+      color: #63ffee;
+      font-weight: 600;
+      flex: none;
+    }
+    .article-card p {
+      color: #fdf6f1;
+      font-size: 0.97rem;
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+    .article-card a.btn {
+      background: linear-gradient(135deg, #667eea, #764ba2 100%);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 18px;
+      padding: 11px 24px;
+      box-shadow: 0 2px 12px #23252699;
+      transition: background 0.13s;
+      margin-top: 4px;
+    }
+    .article-card a.btn:hover { background: linear-gradient(135deg,#58c8fe 60%,#232526 100%); }
+    footer {
+      text-align: center;
+      padding: 28px 5px;
+      color: #bbb !important;
+      background: rgba(16,17,21,0.82);
+      font-size: 1rem;
+      margin-top: 38px;
+      border-radius: 0 0 14px 14px;
+      box-shadow: 0 -2px 28px #23252688;
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 2rem; }
+      .bio { font-size: 0.95rem; padding: 12px 7px; }
+      .profile-img { width: 88px; height: 88px; }
+      .logo-img { width: 92px; }
+      .article-gallery { grid-template-columns: 1fr; }
+      .article-card img { height: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Branding Logo -->
+  <img src="https://github.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/blob/main/Screenshot_2025_1024_151604.jpg" class="logo-img" alt="Website Logo">
+
+  <section class="hero">
+    <!-- Main Profile Image -->
+    <img src="https://github.com/Sharikkhanjr/https-Sharikkhanjr.github.io-/blob/main/20251023_143435.jpg" class="profile-img" alt="Profile Picture">
+    <h1>Sharik Khan Jr</h1>
+    <div class="tagline">Actor • Music Artist • Director</div>
+    <div class="bio">
+      The next-gen music artist from Achalpur, redefining indie sound with fresh beats, authentic lyrics, and bold collaborations.<br>
+      Exploring stories and rhythm straight from Maharashtra!
+    </div>
+  </section>
+
+  <!-- Socials Row -->
+  <div class="social-row">
+    <a href="https://www.instagram.com/sharik.khan.jr?igsh=N3ExY25sZW9rOTN0" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/Sharikkhanjr1" target="_blank">Facebook</a>
+    <a href="https://share.google/D97xS1Hp2k1NafszH" target="_blank">Google Panel</a>
+    <a href="https://m.imdb.com/name/nm16157187/?ref_=ext_shr_lnk" target="_blank">IMDB</a>
+    <a href="https://wa.me/919503123294" target="_blank">WhatsApp</a>
+    <a href="mailto:sharikk955@gmail.com">Email</a>
+    <a href="https://music.apple.com/in/artist/sharik-khan-jr/1744501517" target="_blank">Apple Music</a>
+    <a href="https://open.spotify.com/artist/48wk6a7QLT5DGrGijhJDm3" target="_blank">Spotify</a>
+    <a href="https://www.boomplay.com/artists/89861955" target="_blank">Boomplay</a>
+    <a href="https://www.jiosaavn.com/artist/sharik-khan-jr-songs/mi,E6Jur0ZQ_" target="_blank">JioSaavn</a>
+  </div>
+
+  <!-- Article Gallery -->
+  <div class="article-gallery">
+
+    <!-- Sample Article Card -->
+    <div class="article-card">
+      <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/20251025_101320.jpg" alt="Tera Yaar Mera Pyar">
+      <div class="desc">
+        <h3>Tera Yaar Mera Pyar</h3>
+        <p>Fresh fusion & cross-border sound, releasing December 2025 — feel the beat.</p>
+        <a href="tera-yaar-mera-pyar.html" target="_blank" class="btn">Read Full Article</a>
+      </div>
+    </div>
+    <!-- Dusra Article Card -->
+    <div class="article-card">
+      <img src="https://github.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/raw/main/images/20251025_221129.jpg" alt="Sam Parjapati Collab">
+      <div class="desc">
+        <h3>Sam Parjapati Collaboration</h3>
+        <p>TV actor Sam Parjapati ke saath special track, energy and star power.</p>
+        <a href="article-sharik-sam.html" target="_blank" class="btn">Read Full Article</a>
+      </div>
+    </div>
+    <!-- Continue all 11 cards in same style, teaser unique -->
+    <!-- ... -->
+
+  </div>
+
+  <footer>
+    © 2025 Sharik Khan Jr | All rights reserved
+  </footer>
+</body>
+</html>
