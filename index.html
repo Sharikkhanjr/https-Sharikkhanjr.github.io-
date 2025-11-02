@@ -213,15 +213,18 @@
     
     /* 2. Social Media Container (.social-row) Ko FULL WIDTH Aur Vertical Karo */
     .social-row {
-        /* Full width lega */
-        width: 100% !important; 
+        /* YEH TEEN LINES HATA DO aur neeche wali teen lines add karo */
+        /* width: 100% !important; */ 
+        /* margin: 24px 0 24px 0 !important; */ 
+        /* padding: 0 18px !important; */ 
         
-        /* Side margin hata rahe hain, bas side padding de rahe hain */
-        margin: 24px 0 24px 0 !important; 
-        padding: 0 18px !important; 
+        /* Yeh naya code hai: */
+        display: block !important;       /* FLEX ko override karke block banao */
+        width: 100% !important;          /* Poori width do */
+        margin: 24px auto 24px auto !important; /* Center mein rakho taki side padding ka kaam ho jaaye */
+        padding: 0 0 !important;         /* Padding hata do */
         
-        /* Vertical stacking ke liye */
-        display: block !important; 
+        /* Flexbox properties ko puri tarah se block kar do */
         flex-direction: initial !important; 
     }
 
@@ -231,9 +234,12 @@
         width: 100% !important; 
         display: block !important; 
         
-        /* Bottom margin rakho */
-        margin: 0 0 12px 0 !important; 
+        /* Margin set karte hain, side mein auto do taki button center ho jaaye */
+        margin: 0 auto 12px auto !important; /* Top, Right(Auto), Bottom, Left(Auto) */
         text-align: center !important; 
+
+        /* Button ki max width set karte hain, taaki woh thoda andar rahe */
+        max-width: 500px !important;
     }
 }
 
