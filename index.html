@@ -207,25 +207,54 @@
 }  
 /* Sirf desktop screens ke liye (768px se upar) */
 @media (min-width: 768px) {
+    
+    /* 1. Profile Section (HERO) Ko Bada Aur Center Karo */
     .hero {
-        max-width: 500px !important; 
-        margin-left: auto !important;
-        margin-right: auto !important;
-        text-align: center !important; 
+        /* Profile section ko thoda narrow rakhte hain, par bade size mein */
+        max-width: 650px; /* Thoda bada width diya */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 80px 30px 50px 30px; /* Padding badhai */
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem; /* Name ko bada kiya */
+    }
+
+    .hero .profile-img {
+        width: 180px; /* Profile photo badi ki */
+        height: 180px;
+    }
+
+    .hero .tagline {
+        font-size: 1.5rem; /* Tagline badi ki */
     }
     
+    /* 2. Article Gallery Ko Do Columns Mein Set Karo */
+    .article-gallery {
+        /* Articles ko ab 2 columns mein dikhao */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 40px; /* Gap badhaya */
+        max-width: 1200px; /* Puri gallery ki max width */
+        margin: 40px auto; /* Gallery ko center karo */
+        padding: 0 30px; /* Side padding */
+    }
+
+    /* 3. Social Media Container (.social-row) Ko Narrow Vertical Stack Rakho (Jo humne pehle fix kiya tha) */
     .social-row {
-        max-width: 500px !important; 
-        margin: 24px auto 24px auto !important;
-        padding: 0 0 !important; 
-        display: block !important; 
+        /* Isko wapis narrow aur center rakho jaisa mobile mein dikhta hai */
+        max-width: 500px; 
+        margin: 40px auto 40px auto; 
+        padding: 0; 
+        display: block; 
     }
 
     .social-row a {
-        width: 100% !important; 
-        display: block !important; 
-        margin: 0 0 12px 0 !important; 
-        text-align: center !important; 
+        width: 100%; 
+        display: block; 
+        margin: 0 0 15px 0; 
+        text-align: center; 
     }
 }
 
