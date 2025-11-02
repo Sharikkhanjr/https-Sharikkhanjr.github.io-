@@ -200,6 +200,30 @@
     padding: 10px 8px 10px 8px;
   }
 }    
+
+/* Sirf desktop screens ke liye (Example: 768px se upar) */
+/* Iss media query ke andar ka code sirf badi screens (desktop) par apply hoga */
+@media (min-width: 768px) {
+    /* Yeh aapke social media buttons ke container ko center aur narrow kar dega */
+    .social-links-wrapper {
+        /* Max-width ko adjust kar sakte hain agar 400px zyada ya kam lage */
+        max-width: 400px; 
+        margin-left: auto; /* Center karne ke liye */
+        margin-right: auto; /* Center karne ke liye */
+        
+        /* Agar links side-by-side ho gaye the toh ab vertical ho jayenge */
+        display: block; 
+    }
+
+    /* Har ek button ko poori available width dekar vertical stack karega */
+    .social-links-wrapper a {
+        display: block; /* Button ko poori width do */
+        margin-bottom: 12px; /* Har button ke beech mein space */
+        width: 100%; /* Poora wide button */
+        text-align: center; /* Button ke andar ka text center karo */
+    }
+}
+    
   </style>
 </head>
 <body>
