@@ -215,23 +215,32 @@
     .social-row {
         /* Ab hum isko screen ki puri width lene ko force karenge */
         width: 100% !important; 
-        /* Aur iske andar ke items ko vertical stack karenge */
-        flex-direction: column !important; 
         
-        /* Agar iske upar koi padding ho toh usko adjust karne ke liye */
+        /* Margin aur Padding ko zero karo taki full space mil jaaye */
         padding-left: 0 !important;
         padding-right: 0 !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
+        
+        /* Flexbox properties ko puri tarah se block kar do */
+        display: block !important; 
+        flex-direction: initial !important; /* Agar yeh lagane se theek ho jaaye */
+        justify-content: initial !important;
+        align-items: initial !important;
     }
 
     /* 3. Har Button (.social-row a) Ko Full Width Do */
     .social-row a {
-        /* Mobile CSS (Line 186) mein width: 90% thi, hum usko 100% kar rahe hain */
+        /* Button ki width 100% honi chahiye */
         width: 100% !important; 
         display: block !important; 
-        margin-bottom: 12px !important; 
-        /* Margin: 0 auto !important; ko remove kar do agar woh center kar raha ho. */
+        
+        /* Margin zero karo, bas bottom mein space rakho */
+        margin: 0 0 12px 0 !important; 
+        text-align: center !important; 
+        
+        /* Ensure the button text is centered */
+        justify-content: center !important; 
     }
 }
 
