@@ -196,8 +196,6 @@
 }  
 /* Sirf desktop screens ke liye (768px se upar) */
 @media (min-width: 768px) {
-    
-    /* 1. Profile Section Ko Center Karo */
     .hero {
         max-width: 500px !important; 
         margin-left: auto !important;
@@ -205,35 +203,18 @@
         text-align: center !important; 
     }
     
-    /* 2. Social Media Container (.social-row) Ko FULL WIDTH Aur Vertical Karo */
     .social-row {
-        /* YEH TEEN LINES HATA DO aur neeche wali teen lines add karo */
-        /* width: 100% !important; */ 
-        /* margin: 24px 0 24px 0 !important; */ 
-        /* padding: 0 18px !important; */ 
-        
-        /* Yeh naya code hai: */
-        display: block !important;       /* FLEX ko override karke block banao */
-        width: 100% !important;          /* Poori width do */
-        margin: 24px auto 24px auto !important; /* Center mein rakho taki side padding ka kaam ho jaaye */
-        padding: 0 0 !important;         /* Padding hata do */
-        
-        /* Flexbox properties ko puri tarah se block kar do */
-        flex-direction: initial !important; 
+        max-width: 500px !important; 
+        margin: 24px auto 24px auto !important;
+        padding: 0 0 !important; 
+        display: block !important; 
     }
 
-    /* 3. Har Button (.social-row a) Ko Full Width Do */
     .social-row a {
-        /* Button ki width 100% honi chahiye */
         width: 100% !important; 
         display: block !important; 
-        
-        /* Margin set karte hain, side mein auto do taki button center ho jaaye */
-        margin: 0 auto 12px auto !important; /* Top, Right(Auto), Bottom, Left(Auto) */
+        margin: 0 0 12px 0 !important; 
         text-align: center !important; 
-
-        /* Button ki max width set karte hain, taaki woh thoda andar rahe */
-        max-width: 500px !important;
     }
 }
 
