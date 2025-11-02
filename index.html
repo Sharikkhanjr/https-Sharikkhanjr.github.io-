@@ -203,31 +203,35 @@
 /* Sirf desktop screens ke liye (768px se upar) */
 @media (min-width: 768px) {
     
-    /* 1. Profile Section Ko Center Karo (Agar zaroori ho toh) */
+    /* 1. Profile Section Ko Center Karo (Isse narrow center profile set ho jayegi) */
     .hero {
-        /* Yeh profile ko center mein narrow dikhayega */
         max-width: 500px !important; 
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: center !important; 
     }
     
-    /* 2. Social Media Container (.social-row) Ko Full Width Aur Vertical Karo */
+    /* 2. Social Media Container (.social-row) Ko FULL WIDTH Aur Vertical Karo */
     .social-row {
-        /* Yahan se max-width aur margin: auto hata diya hai */
-        /* Taaki woh screen ki puri width le sake */
-        
-        /* Jo buttons ko side-by-side hone se rokega aur vertical stack karega */
+        /* Ab hum isko screen ki puri width lene ko force karenge */
+        width: 100% !important; 
+        /* Aur iske andar ke items ko vertical stack karenge */
         flex-direction: column !important; 
-        /* Agar buttons mein padding/gap ka issue ho toh isko try karna */
-        display: block !important; 
+        
+        /* Agar iske upar koi padding ho toh usko adjust karne ke liye */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
-    /* 3. Har Button Ko Full Width Do */
+    /* 3. Har Button (.social-row a) Ko Full Width Do */
     .social-row a {
-        display: block !important; /* Button ko poori width do */
-        width: 100% !important; /* Pura wide button */
-        margin-bottom: 12px !important; /* Har button ke beech mein space */
+        /* Mobile CSS (Line 186) mein width: 90% thi, hum usko 100% kar rahe hain */
+        width: 100% !important; 
+        display: block !important; 
+        margin-bottom: 12px !important; 
+        /* Margin: 0 auto !important; ko remove kar do agar woh center kar raha ho. */
     }
 }
 
