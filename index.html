@@ -203,7 +203,7 @@
 /* Sirf desktop screens ke liye (768px se upar) */
 @media (min-width: 768px) {
     
-    /* 1. Profile Section Ko Center Karo (Isse narrow center profile set ho jayegi) */
+    /* 1. Profile Section Ko Center Karo */
     .hero {
         max-width: 500px !important; 
         margin-left: auto !important;
@@ -213,20 +213,16 @@
     
     /* 2. Social Media Container (.social-row) Ko FULL WIDTH Aur Vertical Karo */
     .social-row {
-        /* Ab hum isko screen ki puri width lene ko force karenge */
+        /* Full width lega */
         width: 100% !important; 
         
-        /* Margin aur Padding ko zero karo taki full space mil jaaye */
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        /* Side margin hata rahe hain, bas side padding de rahe hain */
+        margin: 24px 0 24px 0 !important; 
+        padding: 0 18px !important; 
         
-        /* Flexbox properties ko puri tarah se block kar do */
+        /* Vertical stacking ke liye */
         display: block !important; 
-        flex-direction: initial !important; /* Agar yeh lagane se theek ho jaaye */
-        justify-content: initial !important;
-        align-items: initial !important;
+        flex-direction: initial !important; 
     }
 
     /* 3. Har Button (.social-row a) Ko Full Width Do */
@@ -235,12 +231,9 @@
         width: 100% !important; 
         display: block !important; 
         
-        /* Margin zero karo, bas bottom mein space rakho */
+        /* Bottom margin rakho */
         margin: 0 0 12px 0 !important; 
         text-align: center !important; 
-        
-        /* Ensure the button text is centered */
-        justify-content: center !important; 
     }
 }
 
