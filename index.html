@@ -208,55 +208,61 @@
 /* Sirf desktop screens ke liye (768px se upar) */
 @media (min-width: 768px) {
     
-    /* 1. Profile Section (HERO) Ko Full Width Aur Bada Karo */
+    /* Profile Section (HERO) Ko Full Width Aur Bada Karo */
     .hero {
-        /* max-width hata rahe hain taaki woh puri screen width le le */
-        max-width: none; 
+        /* max-width ko hata kar default full size par set kiya */
+        max-width: none !important; 
         
-        padding: 80px 30px 50px 30px; /* Padding badhai */
-        margin: 0; /* Margin hatao */
-        text-align: center;
+        padding: 80px 30px 50px 30px !important; 
+        margin: 0 !important; 
+        text-align: center !important;
     }
 
     .hero h1 {
-        font-size: 3.5rem; /* Name ko bada kiya */
+        font-size: 3.5rem !important; /* Name bada karo */
     }
 
     .hero .profile-img {
-        width: 180px; /* Profile photo badi ki */
-        height: 180px;
+        width: 180px !important; /* Photo badi karo */
+        height: 180px !important;
     }
 
     .hero .tagline {
-        font-size: 1.5rem; /* Tagline badi ki */
+        font-size: 1.5rem !important; 
     }
     
-    /* 2. Article Gallery Ko Do Columns Mein Bada Karo */
+    /* Bio ko bada karo taaki woh chota na dikhe */
+    .bio {
+        max-width: 700px !important; /* Bio box ko bada kiya */
+        font-size: 1.25rem !important; /* Bio text bada kiya */
+        margin: 18px auto 30px auto !important;
+    }
+    
+    /* 2. Article Gallery Ko Bada Aur Do Columns Mein Set Karo */
     .article-gallery {
-        /* Articles ko ab 2 columns mein dikhao */
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 40px; 
-        max-width: 1200px; /* Gallery ki max width rakhi taki bahut zyada stretch na ho */
-        margin: 40px auto; /* Gallery ko center karo */
-        padding: 0 30px; /* Side padding */
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 40px !important; 
+        max-width: 1200px !important; 
+        margin: 40px auto !important; 
+        padding: 0 30px !important; 
     }
 
     /* 3. Social Media Container (.social-row) Ko Narrow Vertical Stack Rakho */
     .social-row {
-        /* Social buttons ko narrow aur center hi rakhte hain, kyunki woh behtar dikhte hain */
-        max-width: 500px; 
-        margin: 40px auto 40px auto; 
-        padding: 0; 
-        display: block; 
+        max-width: 500px !important; 
+        margin: 40px auto 40px auto !important; 
+        padding: 0 !important; 
+        display: block !important; 
     }
 
     .social-row a {
-        width: 100%; 
-        display: block; 
-        margin: 0 0 15px 0; 
-        text-align: center; 
+        width: 100% !important; 
+        display: block !important; 
+        margin: 0 0 15px 0 !important; 
+        text-align: center !important; 
     }
 }
+
 
   </style>
 </head>
