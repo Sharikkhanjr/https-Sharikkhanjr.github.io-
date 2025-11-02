@@ -199,27 +199,27 @@
   .article-card .desc {
     padding: 10px 8px 10px 8px;
   }
-}    
-
-    /* Sirf desktop screens ke liye (768px se upar) */
+}  
+/* Sirf desktop screens ke liye (768px se upar) */
 @media (min-width: 768px) {
+    
     /* 1. Profile Section Ko Center Karo (Agar zaroori ho toh) */
     .hero {
-        max-width: 500px !important; /* !important se yeh property force ho jayegi */
+        /* Yeh profile ko center mein narrow dikhayega */
+        max-width: 500px !important; 
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: center !important; 
     }
     
-    /* 2. Social Media Container (.social-row) Ko Center Aur Vertical Karo */
+    /* 2. Social Media Container (.social-row) Ko Full Width Aur Vertical Karo */
     .social-row {
-        /* Container ko center karne aur narrow banane ke liye */
-        max-width: 400px !important; 
-        margin-left: auto !important; 
-        margin-right: auto !important; 
+        /* Yahan se max-width aur margin: auto hata diya hai */
+        /* Taaki woh screen ki puri width le sake */
         
         /* Jo buttons ko side-by-side hone se rokega aur vertical stack karega */
         flex-direction: column !important; 
+        /* Agar buttons mein padding/gap ka issue ho toh isko try karna */
         display: block !important; 
     }
 
